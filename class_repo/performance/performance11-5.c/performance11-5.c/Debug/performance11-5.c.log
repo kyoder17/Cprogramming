@@ -1,0 +1,4 @@
+﻿  surfin_bird_student_code.c
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\performance11-5.c\performance11-5.c\surfin_bird_student_code.c(296): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'char *'
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\performance11-5.c\performance11-5.c\surfin_bird_student_code.c(398): warning C4018: '<': signed/unsigned mismatch
+  performance11-5.c.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\class_repo\performance\performance11-5.c\Debug\performance11-5.c.exe

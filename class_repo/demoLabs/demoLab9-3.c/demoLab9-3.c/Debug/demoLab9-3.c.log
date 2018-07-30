@@ -1,0 +1,5 @@
+﻿  Source.c
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\demolabs\demolab9-3.c\demolab9-3.c\source.c(6): warning C4013: 'add_nums' undefined; assuming extern returning int
+  addnums.c
+  Generating Code...
+  demoLab9-3.c.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\class_repo\demoLabs\demoLab9-3.c\Debug\demoLab9-3.c.exe

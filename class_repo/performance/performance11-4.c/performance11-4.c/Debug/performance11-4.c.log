@@ -1,0 +1,6 @@
+﻿  performance11-4.c
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\performance11-4.c\performance11-4.c\performance11-4.c(24): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 2 has type 'int *'
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\performance11-4.c\performance11-4.c\performance11-4.c(25): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 2 has type 'int *'
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\performance11-4.c\performance11-4.c\performance11-4.c(26): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\performance11-4.c\performance11-4.c\performance11-4.c(26): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 2 has type 'int **'
+  performance11-4.c.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\class_repo\performance\performance11-4.c\Debug\performance11-4.c.exe
