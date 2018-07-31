@@ -1,0 +1,3 @@
+﻿  userNames.c
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\usernames.c\usernames.c\usernames.c(44): warning C4013: 'strlen' undefined; assuming extern returning int
+  userNames.c.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\class_repo\performance\userNames.c\Debug\userNames.c.exe

@@ -1,0 +1,3 @@
+﻿  funk.c
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\demolabs\demolab12-1.c\demolab12-1.c\funk.c(16): warning C4013: 'system' undefined; assuming extern returning int
+  demoLab12-1.c.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\class_repo\demoLabs\demoLab12-1.c\Debug\demoLab12-1.c.exe

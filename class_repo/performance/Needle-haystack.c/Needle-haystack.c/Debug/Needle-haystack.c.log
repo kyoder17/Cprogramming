@@ -1,0 +1,13 @@
+﻿  haystack-needle.c
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\needle-haystack.c\needle-haystack.c\haystack-needle.c(27): warning C4010: single-line comment contains line-continuation character
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\needle-haystack.c\needle-haystack.c\haystack-needle.c(29): warning C4013: 'malloc' undefined; assuming extern returning int
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\needle-haystack.c\needle-haystack.c\haystack-needle.c(41): warning C4013: 'free' undefined; assuming extern returning int
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\needle-haystack.c\needle-haystack.c\haystack-needle.c(68): warning C4013: 'strlen' undefined; assuming extern returning int
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\needle-haystack.c\needle-haystack.c\haystack-needle.c(71): warning C4010: single-line comment contains line-continuation character
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\needle-haystack.c\needle-haystack.c\haystack-needle.c(72): warning C4010: single-line comment contains line-continuation character
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\needle-haystack.c\needle-haystack.c\haystack-needle.c(75): warning C4013: 'strstr' undefined; assuming extern returning int
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\needle-haystack.c\needle-haystack.c\haystack-needle.c(80): warning C4010: single-line comment contains line-continuation character
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\needle-haystack.c\needle-haystack.c\haystack-needle.c(82): warning C4013: 'strcpy' undefined; assuming extern returning int
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\needle-haystack.c\needle-haystack.c\haystack-needle.c(87): warning C4013: 'memmove' undefined; assuming extern returning int
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\needle-haystack.c\needle-haystack.c\haystack-needle.c(75): warning C4047: 'initializing': 'char *' differs in levels of indirection from 'int'
+  Needle-haystack.c.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\class_repo\performance\Needle-haystack.c\Debug\Needle-haystack.c.exe

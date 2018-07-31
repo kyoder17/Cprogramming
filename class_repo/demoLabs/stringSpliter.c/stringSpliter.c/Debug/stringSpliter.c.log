@@ -1,0 +1,3 @@
+﻿  string_split_test_struct.c
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\demolabs\stringspliter.c\stringspliter.c\string_split_test_struct.c(204): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'FunctionTest *'
+  stringSpliter.c.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\class_repo\demoLabs\stringSpliter.c\Debug\stringSpliter.c.exe
