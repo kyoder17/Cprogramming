@@ -1,0 +1,11 @@
+﻿  linked-list.c
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(96): warning C4047: 'function': 'char *' differs in levels of indirection from 'char *[256]'
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(96): warning C4024: 'addStudentEnd': different types for formal and actual parameter 2
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(120): warning C4098: 'printAllInfo': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(171): warning C4098: 'printSelectInfo': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(203): warning C4098: 'printSpecialStudent': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(208): warning C4098: 'printSpecialStudent': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(222): warning C4098: 'testImput': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(247): warning C4047: '=': 'char [256]' differs in levels of indirection from 'char'
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(247): error C2106: '=': left operand must be l-value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(267): warning C4047: '=': 'studentInfo *' differs in levels of indirection from 'char (*)[256]'
