@@ -1,0 +1,9 @@
+﻿  linked-list.c
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(90): warning C4098: 'printAllInfo': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(143): warning C4098: 'printSelectInfo': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(175): warning C4098: 'printSpecialStudent': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(180): warning C4098: 'printSpecialStudent': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(193): warning C4098: 'testImput': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(241): warning C4098: 'addStudentEnd': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\linked-list.c\linked-list.c\linked-list.c(324): warning C4716: 'resetStudentNumber': must return a value
+  linked-list.c.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\class_repo\performance\linked-list.c\Debug\linked-list.c.exe
