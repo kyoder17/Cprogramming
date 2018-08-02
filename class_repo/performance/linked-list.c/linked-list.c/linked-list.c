@@ -7,37 +7,8 @@ Linked list
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "linked-list.h"
 
-
- typedef struct studentInfo {
-	char name[256];
-	char initials[256];
-	char artist[256];
-	char car[256];
-	int studentNumber;
-	struct studentInfo * next_node;
-
-}node;
- //this will print all student info
-void printAllInfo(struct studentInfo *head);
-//this will be the menu
-int selectPrint();
-//this will print specific info base on user selection
-void printSelectInfo(struct studentInfo *head, int selection);
-//for testign purposes
-void testImput(struct studentInfo *head);
-//this will print a specific student
-void printSpecialStudent(struct studentInfo *head, int selectStud);
-//this will be the selection of the specific student to print
-int selectStudent(struct studentInfo *head);
-
-void addStudentEnd(struct studentInfo *head);
-
-void removeStudentEnd(struct studentInfo *head);
-
-void removeSpecificStudent(struct studentInfo *head);
-
-int resetStudentNumber(struct studentInfo *head);
 
 int main()
 {
@@ -60,22 +31,6 @@ int main()
 
 	struct studentInfo *head = &student10;
 
-	/////////////////////////////////////////////////////////////////////////////////////
-	int looper = 1;
-	char buffer[256];
-	char *newStructName[256] = {" "};
-	int countOfNew = 0;
-	while (looper<=15)
-	{
-		sprintf(buffer, "student1%d", looper);
-		//printf("%s ", buffer);
-		newStructName[looper] = buffer;
-		newStructName[looper] =malloc(sizeof(struct studentInfo));
-		//printf("%d", newStructName[looper]);
-		looper++;
-	
-	}
-	////////////////////////////////////////////////////////////////////////////////////////
 	// loop though until user is done making selctions
 	while (selection < 9)
 	{
@@ -100,7 +55,7 @@ int main()
 		else if (selection == 6)
 		{
 			addStudentEnd(head);
-			countOfNew++;
+
 		}
 		else if (selection == 7)
 		{
@@ -229,7 +184,6 @@ void printSpecialStudent(struct studentInfo *head, int selectStud)
 
 void testImput(struct studentInfo *head)
 {
-	//int test = head->next_node;
 	while (head != NULL)
 	{
 
@@ -254,7 +208,6 @@ void addStudentEnd(struct studentInfo *head)
 		tempHead = tempHead->next_node;
 		counter++;
 	}
-	//newStudentNumber = (head->studentNumber) + 1;
 	newStudentNumber = counter + 1;
 	printf("Please enter the name of the student. \n");
 	scanf("%s", &newName);
