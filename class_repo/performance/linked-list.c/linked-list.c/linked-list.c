@@ -31,7 +31,13 @@ void printSpecialStudent(struct studentInfo *head, int selectStud);
 //this will be the selection of the specific student to print
 int selectStudent(struct studentInfo *head);
 
-char addStudentEnd(struct studentInfo *head, char *newStructName, int countOfNew);
+void addStudentEnd(struct studentInfo *head);
+
+void removeStudentEnd(struct studentInfo *head);
+
+void removeSpecificStudent(struct studentInfo *head);
+
+int resetStudentNumber(struct studentInfo *head);
 
 int main()
 {
@@ -40,16 +46,16 @@ int main()
 	int selectStud = 0;
 
 	//create the structure of students and thier info
-	struct studentInfo student1 = { "Abraham Lincoln","AL", "Maroon5", "Lamborghini Aventador", 1, NULL };
-	struct studentInfo student2 = { "Dennis the Menace","DtM", "Drake", "Lamborghini Aventador", 2, &student1 };
-	struct studentInfo student3 = { "Gandolf the Grey","GtG", "Ariana Grande", "Large Eagle", 3, &student2 };
-	struct studentInfo student4 = { "John F Kennedy","JFK", "Maroon5", "Lamborghini Aventador", 4, &student3 };
-	struct studentInfo student5 = { "Martin Luther King","MLK", "Maroon5", "Lamborghini Aventador", 5, &student4 };
-	struct studentInfo student6 = { "Peter Parker","PP", "Maroon5", "Lamborghini Aventador", 6, &student5 };
-	struct studentInfo student7 = { "Stevo","S", "Maroon5", "Lamborghini Aventador", 7, &student6 };
-	struct studentInfo student8 = { "Vader, Darth","VD", "Maroon5", "Lamborghini Aventador", 8, &student7 };
-	struct studentInfo student9 = { "Yosemite Sam","YS", "Maroon5", "Horse", 9, &student8 };
-	struct studentInfo student10 = { "Zerg Rush","ZR", "Beatles", "On Foot", 10, &student9 };
+	struct studentInfo student1 = { "Abraham Lincoln","AL", "Maroon5", "Lamborghini Aventador", 10, NULL };
+	struct studentInfo student2 = { "Dennis the Menace","DtM", "Drake", "Lamborghini Aventador", 9, &student1 };
+	struct studentInfo student3 = { "Gandolf the Grey","GtG", "Ariana Grande", "Large Eagle", 8, &student2 };
+	struct studentInfo student4 = { "John F Kennedy","JFK", "Maroon5", "Lamborghini Aventador", 7, &student3 };
+	struct studentInfo student5 = { "Martin Luther King","MLK", "Maroon5", "Lamborghini Aventador", 6, &student4 };
+	struct studentInfo student6 = { "Peter Parker","PP", "Maroon5", "Lamborghini Aventador", 5, &student5 };
+	struct studentInfo student7 = { "Stevo","S", "Maroon5", "Lamborghini Aventador", 4, &student6 };
+	struct studentInfo student8 = { "Vader, Darth","VD", "Maroon5", "Lamborghini Aventador", 3, &student7 };
+	struct studentInfo student9 = { "Yosemite Sam","YS", "Maroon5", "Horse", 2, &student8 };
+	struct studentInfo student10 = { "Zerg Rush","ZR", "Beatles", "On Foot", 1, &student9 };
 
 
 	struct studentInfo *head = &student10;
@@ -71,7 +77,7 @@ int main()
 	}
 	////////////////////////////////////////////////////////////////////////////////////////
 	// loop though until user is done making selctions
-	while (selection < 7)
+	while (selection < 9)
 	{
 		selection = selectPrint();
 		if (selection == 0)
@@ -93,10 +99,19 @@ int main()
 		}
 		else if (selection == 6)
 		{
-			addStudentEnd(head, newStructName, countOfNew);
+			addStudentEnd(head);
 			countOfNew++;
 		}
-		else if (selection > 6 || selection < 0)
+		else if (selection == 7)
+		{
+			removeStudentEnd(head);
+		}
+		else if (selection == 8)
+		{
+			removeSpecificStudent(head);
+			resetStudentNumber(head);
+		}
+		else if (selection > 8 || selection < 0)
 		{
 			break;
 		}
@@ -131,7 +146,9 @@ int selectPrint()
 	printf("	Enter 4 to select a specific student \n");
 	printf("	Enter 5 for just names \n");
 	printf("	Enter 6 to enter a new student \n");
-	printf("	Enter 7 to exit selection list \n");
+	printf("	Enter 7 to remove last student \n");
+	printf("	Enter 8 to remove selected student \n");
+	printf("	Enter 9 to exit selection list \n");
 	scanf("%d", &selection);
 	return selection;
 }
@@ -223,17 +240,22 @@ void testImput(struct studentInfo *head)
 }
 
 
-char addStudentEnd(node *head, char *newStructName, int countOfNew)
+void addStudentEnd(struct studentInfo *head)
 {
+	struct studentInfo *tempHead = head;
 	char newName[256];
 	char newInitials[256] = { 0 };
 	char newArtist[256];
 	char newCar[256];
 	int newStudentNumber;
-	char buf[256];
-	char lastName;
-	int countTotalPossNew;
-	newStudentNumber = (head->studentNumber) + 1;
+	int counter =0;
+	while (tempHead != NULL)
+	{
+		tempHead = tempHead->next_node;
+		counter++;
+	}
+	//newStudentNumber = (head->studentNumber) + 1;
+	newStudentNumber = counter + 1;
 	printf("Please enter the name of the student. \n");
 	scanf("%s", &newName);
 	printf("Please enter the initials of the student. \n");
@@ -242,9 +264,6 @@ char addStudentEnd(node *head, char *newStructName, int countOfNew)
 	scanf("%s", &newArtist);
 	printf("Please enter the dream car of the student. \n");
 	scanf("%s", &newCar);
-	sprintf(buf, "student%d", newStudentNumber);
-	//printf("%s",buf);
-	lastName = *newName;
 	if (newName&&newInitials&&newArtist&&newCar)
 	{
 		node * lastName = (node*)malloc(sizeof(node));
@@ -252,64 +271,105 @@ char addStudentEnd(node *head, char *newStructName, int countOfNew)
 		strcpy(lastName->initials, newInitials);
 		strcpy(lastName->artist, newArtist);
 		strcpy(lastName->car, newCar);
-		lastName->studentNumber= newStudentNumber;
-		lastName->next_node= NULL;
+		lastName->studentNumber = newStudentNumber;
+		lastName->next_node = NULL;
+
+		int shift = 0;
+		while (shift == 0)
+		{
+			if (head->next_node != NULL)
+			{
+				head = head->next_node;
+			}
+			else if (head->next_node == NULL)
+			{
+				(head->next_node) = lastName;
+				shift = 1;
+				return 0;
+			}
+			else
+			{
+				printf("No more room for new studnets!");
+			}
+		}
 	}
+}
+
+void removeStudentEnd(struct studentInfo *head)
+{
+	struct studentInfo *tempHead = head;
+
 	int shift = 0;
+	int counter=0;
 	while (shift == 0)
 	{
-		if (head->next_node != NULL)
+		if (tempHead->next_node != NULL)
+		{
+			tempHead = tempHead->next_node;
+			counter++;
+		}
+		else if (tempHead->next_node == NULL)
+		{
+			counter++;
+			break;
+		}
+	}
+	for (int i = 1; i < (counter-1); i++)
+	{
+		head = head->next_node;
+	}
+	head->next_node = NULL;
+	printf("\nStudent Removed. \n");
+}
+
+void removeSpecificStudent(struct studentInfo *head)
+{
+	int counter = 1;
+	struct studentInfo *tempHead = head;
+	int studentChosen;
+	studentChosen = selectStudent(head);
+	//printf("%d\n", studentChosen);
+	while (tempHead != NULL)
+	{
+		if (tempHead->studentNumber != studentChosen)
+		{
+			tempHead = tempHead->next_node;
+			counter++;
+		}
+		else if (tempHead->studentNumber == studentChosen)
+		{
+			//printf("%d\n", counter);
+			break;
+		}
+	}
+	while (head != NULL)
+	{
+		if (head->studentNumber != (studentChosen-1))
 		{
 			head = head->next_node;
-		}
-		else if (head->next_node == NULL)
-		{
-			(head->next_node) = &lastName;
-			shift = 1;
-			return 0;
-		}
 
-		else
-		{
-			printf("No more room for new studnets!");
 		}
+		else if (head->studentNumber == (studentChosen -1))
+		{
+			head->next_node = tempHead->next_node;
+			break;
+		}
+	}
+}
+
+
+int resetStudentNumber(struct studentInfo *head)
+{
+	int startNum;
+	startNum =head->studentNumber;
+	while (head != NULL)
+	{
+		head->studentNumber = startNum;
+		head = head->next_node;
+		startNum++;
 	}
 }
 
 
 
 
-
-/*
-
-
-countTotalPossNew = sizeof(newStructName) / sizeof(newStructName[0]);
-if (countOfNew < countTotalPossNew)
-{
-
-struct studentInfo student11 = { newName, newInitials, newArtist, newCar, newStudentNumber, NULL };
-printf("%s", student11);
-//struct studentInfo *buf;
-int shift = 0;
-while (shift == 0)
-{
-if (head->next_node != NULL)
-{
-head = head->next_node;
-}
-else if (head->next_node == NULL)
-{
-(head->next_node) = &student11;
-shift = 1;
-return 0;
-}
-}
-}
-else
-{
-printf("No more room for new studnets!");
-}
-//head = &buf;
-//return 0;
-
-*/
