@@ -1,0 +1,9 @@
+﻿  linked-list.c
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\optimized-link-list.c\optimized-link-list.c\linked-list.c(100): warning C4098: 'printAllInfo': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\optimized-link-list.c\optimized-link-list.c\linked-list.c(153): warning C4098: 'printSelectInfo': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\optimized-link-list.c\optimized-link-list.c\linked-list.c(185): warning C4098: 'printSpecialStudent': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\optimized-link-list.c\optimized-link-list.c\linked-list.c(190): warning C4098: 'printSpecialStudent': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\optimized-link-list.c\optimized-link-list.c\linked-list.c(203): warning C4098: 'testImput': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\optimized-link-list.c\optimized-link-list.c\linked-list.c(251): warning C4098: 'addStudentEnd': 'void' function returning a value
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\optimized-link-list.c\optimized-link-list.c\linked-list.c(334): warning C4716: 'resetStudentNumber': must return a value
+  optimized-link-list.c.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\class_repo\performance\optimized-link-list.c\Debug\optimized-link-list.c.exe

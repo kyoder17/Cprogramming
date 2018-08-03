@@ -1,0 +1,7 @@
+﻿  fibonacci-main.c
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\optimized-fibonacci.c\optimized-fibonacci.c\fibonacci-main.c(70): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\optimized-fibonacci.c\optimized-fibonacci.c\fibonacci-main.c(102): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\optimized-fibonacci.c\optimized-fibonacci.c\fibonacci-main.c(132): warning C4013: 'strerror' undefined; assuming extern returning int
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\optimized-fibonacci.c\optimized-fibonacci.c\fibonacci-main.c(132): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\optimized-fibonacci.c\optimized-fibonacci.c\fibonacci-main.c(132): warning C4024: 'perror': different types for formal and actual parameter 1
+  optimized-fibonacci.c.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\class_repo\performance\optimized-fibonacci.c\Debug\optimized-fibonacci.c.exe
