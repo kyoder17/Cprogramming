@@ -1,0 +1,4 @@
+﻿  errno.c
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\errno.c\errno.c\errno.c(26): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\dotlaptop\documents\class\cprogramming\class_repo\performance\errno.c\errno.c\errno.c(15): warning C4101: 'currentError': unreferenced local variable
+  errno.c.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\class_repo\performance\errno.c\Debug\errno.c.exe
