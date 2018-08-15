@@ -1,0 +1,40 @@
+ch04:
+
+
+function overloading
+this allows for the declaration of multiple functions all named the smae thing but that take in differnt input and thus can be used to do differn things
+can change the argumnets to overload but can not overload by changing the type
+
+operator overloading
+
+overloading operators allow you to write your "own rules" for a desired operator
+this functions almost like a function
+
+
+templates
+templates allow the user to generically define things
+this can be used in functions all the way up to classes
+this generic definition will allow for typename to be used for greater versitility in functions and classes
+
+
+ch05:
+
+
+resources and how they are managed
+resources are allocated and then last until they are removed with somethign like a destrutor
+
+error-handling (different types of them)
+errors can be thrown and then caught. allows for correction/ problem solving rather then just completely exiting when a problem is encountered
+
+
+moving and copying and when to use which over the other
+copying makes a copy of entire set of values  or object
+while moving allows you to chose which parts of something you wise to use
+
+
+l-values and r-values(specifically why r-values are special, give an example)
+L-values last beyond its single use, can be on the left or right side,        a=b
+R-values can only be on the right side and are usally temporary, such as ..... a=functionX  functionX here is an r value it exists long engough to run and return a value
+
+unique pointers (heap sharing and how pointers can be shared) (edited)
+it is possible to have a pointer set so it can be shared by multiple diffent things allowing for different objects to all interact with the same thing 

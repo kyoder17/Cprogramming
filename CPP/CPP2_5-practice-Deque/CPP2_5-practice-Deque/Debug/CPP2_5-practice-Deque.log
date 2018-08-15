@@ -1,0 +1,8 @@
+﻿  CPP2_5-practice-Deque.cpp
+c:\users\dotlaptop\documents\class\cprogramming\cpp\cpp2_5-practice-deque\cpp2_5-practice-deque\cpp2_5-practice-deque.cpp(75): warning C4018: '<': signed/unsigned mismatch
+c:\users\dotlaptop\documents\class\cprogramming\cpp\cpp2_5-practice-deque\cpp2_5-practice-deque\cpp2_5-practice-deque.cpp(123): warning C4018: '<': signed/unsigned mismatch
+c:\users\dotlaptop\documents\class\cprogramming\cpp\cpp2_5-practice-deque\cpp2_5-practice-deque\cpp2_5-practice-deque.cpp(147): warning C4018: '<': signed/unsigned mismatch
+c:\users\dotlaptop\documents\class\cprogramming\cpp\cpp2_5-practice-deque\cpp2_5-practice-deque\cpp2_5-practice-deque.cpp(142): warning C4101: 'newNum2': unreferenced local variable
+c:\users\dotlaptop\documents\class\cprogramming\cpp\cpp2_5-practice-deque\cpp2_5-practice-deque\cpp2_5-practice-deque.cpp(224): warning C4018: '<': signed/unsigned mismatch
+c:\users\dotlaptop\documents\class\cprogramming\cpp\cpp2_5-practice-deque\cpp2_5-practice-deque\cpp2_5-practice-deque.cpp(237): warning C4018: '<': signed/unsigned mismatch
+  CPP2_5-practice-Deque.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\CPP\CPP2_5-practice-Deque\Debug\CPP2_5-practice-Deque.exe

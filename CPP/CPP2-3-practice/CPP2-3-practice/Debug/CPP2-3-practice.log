@@ -1,0 +1,8 @@
+﻿  CPP2_3-practice.cpp
+c:\users\dotlaptop\documents\class\cprogramming\cpp\cpp2-3-practice\cpp2-3-practice\cpp2_3-practice.cpp(67): warning C4018: '<': signed/unsigned mismatch
+c:\users\dotlaptop\documents\class\cprogramming\cpp\cpp2-3-practice\cpp2-3-practice\cpp2_3-practice.cpp(123): warning C4018: '<': signed/unsigned mismatch
+c:\users\dotlaptop\documents\class\cprogramming\cpp\cpp2-3-practice\cpp2-3-practice\cpp2_3-practice.cpp(151): warning C4018: '<': signed/unsigned mismatch
+c:\users\dotlaptop\documents\class\cprogramming\cpp\cpp2-3-practice\cpp2-3-practice\cpp2_3-practice.cpp(146): warning C4101: 'newNum2': unreferenced local variable
+c:\users\dotlaptop\documents\class\cprogramming\cpp\cpp2-3-practice\cpp2-3-practice\cpp2_3-practice.cpp(222): warning C4018: '<': signed/unsigned mismatch
+c:\users\dotlaptop\documents\class\cprogramming\cpp\cpp2-3-practice\cpp2-3-practice\cpp2_3-practice.cpp(235): warning C4018: '<': signed/unsigned mismatch
+  CPP2-3-practice.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\CPP\CPP2-3-practice\Debug\CPP2-3-practice.exe

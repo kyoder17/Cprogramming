@@ -1,0 +1,21 @@
+Classes
+-are a defined data type which contatins member functions and data
+this acts as the building block for object oriented, it is like a blue print for an object
+
+
+Member functions
+-a function declared within a class that can interact with the other objects of the class
+if the function is wtihin the class it can interact with private objects if it is not it will need to use friendship to access these things
+
+
+
+
+Objects and their lifecycles
+-objects are specific classes, they are like the parts of the class 
+lifecycle starts when initialization, if no destructor is used then until the end of the program
+
+
+Constants and “friendship”
+-constants used in classes can not be directly changed and an atempt to do so will result in a
+failure to compile
+-friendship will allow another class to interact with private set things
