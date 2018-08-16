@@ -8,7 +8,7 @@
 #include <sstream>
 #include <iostream>
 #include <cstdlib> 
-
+#include <time.h>
 
 void introMenu(std::vector<NEXT> actualMechas);
 NEXT mechSelection(std::vector<std::string> listOfMechs, std::vector<NEXT> actualMechas);
@@ -17,12 +17,18 @@ int combatMenu(NEXT player);
 int check_power(NEXT player, int powerCost);
 int check_for_crit();
 
+
 int main() {
+	time_t timer;
+	srand(time(&timer));
+
 	std::vector<std::string> listOfMechs;
 	std::vector<NEXT> actualMechas;
 	NEXT player1Mecha;
 	NEXT player2Mecha;
 	int winner = 0;
+
+
 	// TODO: Create your weapons here. 
 	// Don't over think this step... just create weapon objects. One weapon can be used on multiple mechs
 
@@ -81,14 +87,14 @@ int main() {
 	// This is where our game gets programmed
 	// Have fun here 
 	// Don't get stuck on requirments... just do it!
+
 	introMenu(actualMechas);
-	std::cout <<check_for_crit<<std::endl;
 	std::cout << "Player 1 please select your mecha" << std::endl;
 	player1Mecha = mechSelection(listOfMechs, actualMechas);
 	std::cout << "\nPlayer 2 please select your mecha" << std::endl;
 	player2Mecha = mechSelection(listOfMechs, actualMechas);
 	
-	//player1Mecha.display_weapons();
+
 
 	winner = combatPhase1(player1Mecha, player2Mecha);
 	std::cout << "Player" << winner << " wins!" << std::endl;
@@ -161,6 +167,7 @@ int combatPhase1(NEXT player1, NEXT player2)
 	int action = 1;
 	int damageValue = 0;
 	int powerCost = 0;
+	int critChecker = 0;
 	while (1)
 	{
 		if (playerUp == 1)
@@ -201,6 +208,12 @@ int combatPhase1(NEXT player1, NEXT player2)
 				powerCost = player1.get_power_cost(action);
 				player1.power_calc(powerCost);
 				damageValue = player1.SpecificWeaponDamage(action);
+				critChecker = check_for_crit();
+				if (critChecker == 9)
+				{
+					damageValue = damageValue * 2;
+					std::cout << "Critical Hit\n";
+				}
 				player2.computeDamageReceived(damageValue);
 			}
 			std::cout << "Player1 HP is now " << player1.getHP() << std::endl;
@@ -222,7 +235,7 @@ int combatPhase1(NEXT player1, NEXT player2)
 			{
 
 				powerCost = player2.get_power_cost(action);
-				testPower=check_power(player2,powerCost);
+				testPower = check_power(player2, powerCost);
 				if (testPower == 1)
 				{
 					break;
@@ -252,9 +265,15 @@ int combatPhase1(NEXT player1, NEXT player2)
 				powerCost = player2.get_power_cost(action);
 				player2.power_calc(powerCost);
 				damageValue = player2.SpecificWeaponDamage(action);
+				critChecker = check_for_crit();
+				if (critChecker == 9)
+				{
+					damageValue = damageValue * 2;
+					std::cout << "Critical Hit\n";
+				}
 				player1.computeDamageReceived(damageValue);
 			}
-			std::cout << "Player1 HP is now " << player1.getHP()<<std::endl;
+			std::cout << "Player1 HP is now " << player1.getHP() << std::endl;
 			std::cout << "Player1 power is now " << player1.getPower() << std::endl;
 			std::cout << "Player2 HP is now " << player2.getHP() << std::endl;
 			std::cout << "Player2 power is now " << player2.getPower() << std::endl;
@@ -309,10 +328,9 @@ int check_power(NEXT player, int powerCost)
 
 int check_for_crit()
 {
-	int random_integer = rand();
-	int lowest = 1, highest = 10;
-	int range = (highest - lowest) + 1;
-	random_integer = lowest + int(range*rand() / (RAND_MAX + 1.0));
-	std::cout << random_integer << std::endl;
+
+	int random_integer = rand()%10;
+
 	return random_integer;
 }
+

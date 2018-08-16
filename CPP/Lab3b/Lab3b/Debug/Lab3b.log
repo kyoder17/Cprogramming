@@ -1,4 +1,5 @@
 ﻿  mecha.cpp
+c:\users\dotlaptop\documents\class\cprogramming\cpp\lab3b\lab3b\mecha.cpp(23): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
 c:\users\dotlaptop\documents\class\cprogramming\cpp\lab3b\lab3b\mecha_subs.h(127): warning C4715: 'NEXT::get_power_cost': not all control paths return a value
 c:\users\dotlaptop\documents\class\cprogramming\cpp\lab3b\lab3b\mecha_subs.h(108): warning C4715: 'NEXT::SpecificWeaponDamage': not all control paths return a value
   Lab3b.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\CPP\Lab3b\Debug\Lab3b.exe
