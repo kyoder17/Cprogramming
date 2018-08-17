@@ -1,0 +1,5 @@
+﻿  mecha.cpp
+c:\users\dotlaptop\documents\class\cprogramming\cpp\mechav3\mechav3\mecha.cpp(26): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\dotlaptop\documents\class\cprogramming\cpp\mechav3\mechav3\mecha_subs.h(132): warning C4715: 'NEXT::get_power_cost': not all control paths return a value
+c:\users\dotlaptop\documents\class\cprogramming\cpp\mechav3\mechav3\mecha_subs.h(113): warning C4715: 'NEXT::SpecificWeaponDamage': not all control paths return a value
+  MechaV3.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\CPP\MechaV3\Debug\MechaV3.exe
