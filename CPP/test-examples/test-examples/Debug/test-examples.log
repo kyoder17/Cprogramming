@@ -1,2 +1,3 @@
 ﻿  test-examples.cpp
+c:\users\dotlaptop\documents\class\cprogramming\cpp\test-examples\test-examples\test-examples.cpp(557): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   test-examples.vcxproj -> C:\Users\DOTlaptop\Documents\class\Cprogramming\CPP\test-examples\Debug\test-examples.exe
